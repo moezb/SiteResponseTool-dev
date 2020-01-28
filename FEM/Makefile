@@ -56,6 +56,7 @@ OBJS = \
        Graph.o \
        GraphNumberer.o \
        GroundMotion.o \
+       HHT.o \
        ID.o \
        ImposedMotionSP.o \
        IncrementalIntegrator.o \

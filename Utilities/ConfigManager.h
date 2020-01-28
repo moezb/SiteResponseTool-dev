@@ -19,7 +19,7 @@ private:
 
     ConfigManager(); // this method is private so that it cannot be called
     ConfigManager(ConfigManager const&){}; // same with the copy constructor
-    ConfigManager& operator=(ConfigManager const&){}; // assignment operator as well
+    //ConfigManager& operator=(ConfigManager const&){}; // assignment operator as well
     
     static ConfigManager* m_pInstance;
     ConfigIO* m_configIO;

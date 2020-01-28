@@ -11,8 +11,8 @@ public:
     FileReader(const char* file) ;
     ~FileReader();
 
-    virtual std::map<std::string, std::string> getDataAsMap(){};
-    virtual std::string getVaueFromKey(std::string key){};
+    virtual std::map<std::string, std::string> getDataAsMap()=0;
+    virtual std::string getValueFromKey(std::string key)=0;
     virtual int setDataFile(const char* file){ return 0;};
 
 };

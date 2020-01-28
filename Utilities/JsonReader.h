@@ -14,9 +14,9 @@ public:
     JSONReader(const char* json_file);
     ~JSONReader();
 
-    virtual std::map<std::string, std::string> getDataAsMap();
-    virtual int setDataFile(const char* file);
-    virtual std::string getValueFromKey(std::string key);
+    std::map<std::string, std::string> getDataAsMap() override;
+    int setDataFile(const char* file) override;
+    std::string getValueFromKey(std::string key) override;
 
     nlohmann::json getJsonObject();
 
